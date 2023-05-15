@@ -10,7 +10,7 @@ document.addEventListener("click", (e) => {
 });
 
 function render() {
-    if (watchlist.length > 0) {
+    if (watchlist?.length > 0) {
         const allWatchlistEl = document.createDocumentFragment();
         for (let movie of watchlist) {
             // pass fromLocal true as second argument to render
@@ -21,7 +21,7 @@ function render() {
         movieList.replaceChildren(allWatchlistEl);
     } else {
         movieList.innerHTML = `<h2>Your watchlist is looking a little empty...</h2>
-                <a class="empty-link" href="./index.html"
+                <a class="empty-link" href="../index.html"
                     ><span class="fa-solid fa-circle-plus"></span> Let's add
                     some movies!</a>`;
     }
