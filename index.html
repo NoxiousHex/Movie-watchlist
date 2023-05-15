@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Movie database</title>
+        <link rel="stylesheet"
+        href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/index.css" />
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Find your film</h1>
+            <a href="./pages/watchlist.html">My Watchlist</a>
+        </header>
+        <main>
+            <div class="search-container">
+                <input
+                    class="search"
+                    id="search-box"
+                    placeholder="Search for a movie"
+                />
+                <button id="input-btn">Search</button>
+            </div>
+            <section class="movie-list" id="movie-list">
+                <img class="placeholder-bg" src="./assets/film-icon.png" />
+                <h2>Start exploring</h2>
+            </section>
+        </main>
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
