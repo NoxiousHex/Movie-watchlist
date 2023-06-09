@@ -22,7 +22,7 @@ document.addEventListener("keypress", (e) => {
 async function getMovies(searchStr) {
     //Fetch search results for string from the API
     const res = await fetch(
-        `http://www.omdbapi.com/?apikey=a5f43961&s=${searchStr}`
+        `https://www.omdbapi.com/?apikey=a5f43961&s=${searchStr}`
     );
     const movies = await res.json();
     if (movies.Response === "True") {
@@ -32,7 +32,7 @@ async function getMovies(searchStr) {
         // provided as part of search object
         for (let movie of movies.Search) {
             const res = await fetch(
-                `http://www.omdbapi.com/?apikey=a5f43961&i=${movie.imdbID}`
+                `https://www.omdbapi.com/?apikey=a5f43961&i=${movie.imdbID}`
             );
             const movieInfo = await res.json();
             movieArr.push(movieInfo);
